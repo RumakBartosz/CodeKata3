@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Kata4Classes\DataLoader.cs" />
+    <Compile Include="Kata4Classes\DRYFusion.cs" />
     <Compile Include="Kata4Classes\FootbalTeams.cs" />
     <Compile Include="Kata4Classes\LowestChange.cs" />
     <Compile Include="Program.cs" />

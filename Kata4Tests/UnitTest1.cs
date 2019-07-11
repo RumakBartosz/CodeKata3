@@ -94,4 +94,26 @@ namespace Kata4Tests
             Assert.AreEqual(1, GetLowestIndexValue);
         }
     }
+
+    [TestClass]
+    public class DRYFusionTests
+    {
+        [TestMethod]
+        public void TestDRYFusion()
+        {
+            //Arrange
+            DataLoader MockDataLoader = new DataLoader(@"C:\Users\mion\Source\Repos\Kata3\football.dat");
+            DRYFusion MockDRYFusion = new DRYFusion();
+            String[] TemporaryFileHolder;
+            int GetLowestIndexValue;
+
+            //Act
+            TemporaryFileHolder = MockDataLoader.LoadFileToStringAndTokenize();
+            GetLowestIndexValue = MockDRYFusion.GetLowestChange(TemporaryFileHolder, "football");
+
+
+            //Assert
+            Assert.AreEqual(1, GetLowestIndexValue);
+        }
+    }
 }
